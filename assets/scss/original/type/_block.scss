@@ -1,0 +1,37 @@
+// main: ../../style.scss
+
+.row--block > div {
+  position: relative;
+}
+
+.row--block > div:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: vw-pc(300);
+  background-color: $border-gray;
+  -webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+.row--block div:nth-child(3n)::after {
+  content: none;
+}
+
+.block {
+  padding: vw-pc(25) 0;
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint) {
+
+  .row--block > div:after {
+    height: 300px;
+  }
+
+  .block {
+    padding: 25px 0;
+  }
+}

@@ -1,0 +1,56 @@
+// main: ../../style.scss;
+
+.form {
+  input[type="text"], input[type="email"], input[type="password"], select {
+    padding: 1em 2em;
+    background-color: $color-base;
+    border-width: vw-pc(3);
+    border-style: solid;
+    border-color: #f6f6f6;
+    border-radius: vw-pc(25);
+    width: 100%;
+    height: vw-pc(50);
+    font-family: $font2;
+    font-size: vw-pc(18);
+    letter-spacing: .1em;
+    transition: .3s;
+    &:focus{
+        border-color: $color-orange;
+        outline: 0 !important;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+
+  .form {
+    input[type="text"], input[type="email"], input[type="password"], select {
+      border-width: 3px;
+      border-radius: 25px;
+      width: 100%;
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+}
+
+
+/* ---------------------------------- プレイスホルダー */
+
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+input:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #ccc;
+}
+input::-moz-placeholder,
+select::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #ccc;
+}

@@ -1,0 +1,82 @@
+// main: ../../style.scss;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: vw-pc(60);
+  border-radius: vw-pc(30);
+  font-family: $font2,$font1;
+  font-size: vw-pc(18);
+  font-weight: 700;
+  letter-spacing: .1em;
+  transition: .3s;
+}
+
+.btn:hover {
+  color: $color-base;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn--orange {
+  color: $color-base;
+  @include gradient-orange;
+  transition: .3s;
+}
+
+.btn--blue {
+  color: $color-base;
+  @include gradient-blue;
+  transition: .3s;
+}
+
+.btn--gray {
+  color: #000;
+  background-color: #eeeeee;
+  font-weight: 400;
+  transition: .3s;
+}
+
+.btn--gray:hover {
+  color: #000;
+}
+
+.btn--size400 {
+  width: vw-pc(400);
+}
+
+.btn--blank span {
+  position: relative;
+}
+
+.btn--blank span:after {
+  content: '';
+  display: inline-block;
+  margin-left: .5em;
+  width: vw-pc(10);
+  height: vw-pc(10);
+  background-image: url(../img/blank.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: $breakpoint) {
+
+  .btn {
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+
+  .btn--size400 {
+    width: 400px;
+  }
+
+  .btn--blank span:after {
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+//compileExpanded: ../css/$1.css
+
+
+// original
+@import 'original/base/variable';
+@import 'original/base/reset';
+@import 'original/base/base';
+@import 'original/base/icon';
+@import 'original/mixins/color';
+
+@import 'original/layout/layout';
+@import 'original/layout/aside';
+@import 'original/layout/navbar';
+@import 'original/layout/main';
+
+@import 'original/type/box';
+@import 'original/type/block';
+
+@import 'original/component/button';
+@import 'original/component/form';
+
+@import 'original/project/login';
+@import 'original/project/step01';
+@import 'original/project/step02';
+@import 'original/project/step03';
+@import 'original/project/simulator';
+@import 'original/project/result';

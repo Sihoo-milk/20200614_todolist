@@ -1,0 +1,26 @@
+// main: ../../style.scss;
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,800&display=swap');
+
+$font1: 'Noto Sans JP', sans-serif;
+$font2: 'Montserrat', sans-serif;
+$font-icon: 'Nucleo Outline';
+$color-base: #FFFFFF;
+$color-main: #32d9e0;
+$color-green: #43cca7;
+$color-orange: #ffa204;
+
+$border-gray: #e5e5e5;
+
+$breakpoint: 1441px;
+$breakpoint-max: 1440px;
+
+$box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+
+
+@function vw-pc($size, $viewport:1440) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}

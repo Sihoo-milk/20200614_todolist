@@ -1,0 +1,35 @@
+// main: ../../style.scss
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: $color-base;
+  height: 65px;
+  border-bottom: 1px solid $border-gray;
+}
+
+.navbar-account-type {
+  font-family: $font2;
+  font-size: 18px; font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-status a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid $color-main;
+  color: $color-main;
+  font-family: $font2;
+  font-weight: 700;
+}
+
+.navbar-status a:hover {
+  background-color: $color-main;
+  color: $color-base;
+}

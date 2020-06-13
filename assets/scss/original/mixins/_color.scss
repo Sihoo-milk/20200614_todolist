@@ -1,0 +1,27 @@
+// main: ../../style.scss
+
+/*-------------original-------------------------------------------------------*/
+
+@mixin gradient-primary-width {
+  background: -moz-linear-gradient( left, rgb(0,174,217) 0%, rgb(114,225,131) 100%);
+  background: -webkit-linear-gradient( left, rgb(0,174,217) 0%, rgb(114,225,131) 100%);
+  background: linear-gradient( to right, rgb(0,174,217) 0%, rgb(114,225,131) 100%);
+}
+
+@mixin gradient-primary-height {
+  background: -moz-linear-gradient( top, rgb(114,225,131) 0%, rgb(0,174,217) 100%);
+  background: -webkit-linear-gradient( top, rgb(114,225,131) 0%, rgb(0,174,217) 100%);
+  background: linear-gradient( to bottom, rgb(114,225,131) 0%, rgb(0,174,217) 100%);
+}
+
+@mixin gradient-orange {
+  background: -moz-linear-gradient( left, #ff9e00 0%, #ffb517 100%);
+  background: -webkit-linear-gradient( left, #ff9e00 0%, #ffb517 100%);
+  background: linear-gradient( to right, #ff9e00 0%, #ffb517 100%);
+}
+
+@mixin gradient-blue {
+  background: -moz-linear-gradient( left, #0bbafb 0%, #4285ec 100%);
+  background: -webkit-linear-gradient( left, #0bbafb 0%, #4285ec 100%);
+  background: linear-gradient( to right, #0bbafb 0%, #4285ec 100%);
+}

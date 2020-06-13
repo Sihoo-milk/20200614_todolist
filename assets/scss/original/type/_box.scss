@@ -1,0 +1,18 @@
+// main: ../../style.scss
+
+.box {
+  margin-bottom: vw-pc(25);
+  padding: vw-pc(20);
+  border-radius: vw-pc(20);
+  background-color: $color-base;
+  box-shadow: $box-shadow;
+}
+
+@media screen and (min-width: $breakpoint) {
+
+  .box {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}

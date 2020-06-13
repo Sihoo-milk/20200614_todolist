@@ -1,0 +1,127 @@
+// main: ../../style.scss
+
+.dept-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: vw-pc(-20);
+  margin-bottom: vw-pc(-20);
+  height: vw-pc(80);
+  font-size: vw-pc(24);
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid $border-gray;
+}
+
+.dept-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-pc(145);
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw-pc(100);
+    height: vw-pc(100);
+    border-radius: 50%;
+    i {
+      font-size: vw-pc(54);
+    }
+  }
+}
+
+.dept-icon--blue > div {
+  background-color: #dffeff;
+  color: #00aed9;
+}
+
+.dept-icon--pink > div {
+  background-color: #ffe9e0;
+  color: #f29b76;
+}
+
+.dept-icon--orange > div {
+  background-color: #ffeccf;
+  color: #f8b551;
+}
+
+.dept-icon--green > div {
+  background-color: #edfce7;
+  color: #97ce84;
+}
+.dept-list {
+  padding: 0 vw-pc(10);
+}
+
+.dept-list li {
+  margin-bottom: 1em;
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.dept-list li:before {
+  content: '\ea22';
+  margin-right: .2em;
+  color: #6ce4e9;
+  font-family: $font-icon;
+}
+
+.dept-ex {
+  padding: 1em 1.5em;
+  border-radius: vw-pc(20);
+  background-color: #f6f6f6;
+}
+
+.dept-ex-title {
+  margin-bottom: .5em;
+  color: #43cca7;
+  font-weight: 700;
+}
+.dept-exlist {
+  margin-bottom: 0 !important;
+}
+
+.dept-exlist li {
+  margin-bottom: 0 !important;
+  padding-left: 1em;
+  text-indent: -1em;
+  line-height: 1.6em;
+}
+
+.dept-exlist li:before {
+  content: '・';
+}
+
+@media screen and (min-width: $breakpoint) {
+
+  .dept-title {
+    top: -20px;
+    margin-bottom: -20px;
+    height: 80px;
+    font-size: 24px;
+  }
+
+  .dept-icon {
+    height: 145px;
+    div {
+      width: 100px;
+      height: 100px;
+      i {
+        font-size: 54px;
+      }
+    }
+  }
+
+  .dept-list {
+    padding: 0 10px;
+  }
+
+  .dept-ex {
+    border-radius: 20px;
+  }
+}
