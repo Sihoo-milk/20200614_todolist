@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>SIGN UP | CHAT BOT SIMULATOR</title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport" />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -15,30 +15,32 @@
 <body class="">
   <div class="container-fluid login">
     <div class="row align-items-center justify-content-around">
-      <div class="col-4">
+      <div class="col-6">
         <div class="main-title">
-          <p class="main-title-en">CHAT BOT<br>SIMULATOR</p>
-          <h1 class="main-title-jp">顧客対応シミュレータ</h1>
+          <div class="main-title-top">
+            <img src="../assets/img/check.png" alt="チェックマーク" class="main-title-img">
+            <p class="main-title-en"><span class="main-title-en-thin">Welcom to</span><br>ToDo LIST</p>
+          </div>
+          <img src="../assets/img/MacBookPro.png" alt="MacBook Pro" class="main-img">
+          <h1 class="main-title-jp"><span class="main-title-jp-thick">Focus </span>on the Most Important Task</h1>
         </div>
       </div>
       <div class="col-5">
-        <div class="box signupbox">
-          <h2 class="signupbox-title">SIGN UP</h2>
+        <div class="box signinbox">
+          <h2 class="signinbox-title">SIGN IN</h2>
           <div class="form">
             <dl>
               <dt>Email Address</dt>
               <dd><input type="email" placeholder="Enter Your Email"></dd>
-              <dt>User Name</dt>
-              <dd><input type="text" placeholder="Enter Your Name"></dd>
               <dt>Password</dt>
               <dd><input type="password" placeholder="Enter Your Password"></dd>
             </dl>
-            <div class="signup-btn">
+            <div class="signin-btn">
               <div>
                 <input type="submit" value="送信" class="btn btn--orange">
               </div>
-              <div class="signup-existing">
-                <a href="">アカウントを既にお持ちの方はこちら</a>
+              <div class="signin-existing">
+                <a href="">アカウントをお持ちでいない方はこちら</a>
               </div>
               <div>
                 <input type="submit" value="Googleアカウントでログイン" class="btn btn--gray">
@@ -48,6 +50,7 @@
         </div>
       </div>
     </div>
+    <footer class="footer">Copyright© 株式会社キカガク All Rights Reserved</footer>
   </div>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
