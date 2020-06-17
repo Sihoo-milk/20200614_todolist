@@ -6,6 +6,39 @@
   border-radius: vw-pc(20);
   background-color: $color-base;
   box-shadow: $box-shadow;
+  &-wrap {
+    padding: 0 1vw;
+  }
+  &-input {
+    margin-bottom: 0;
+    padding: 1.5em;
+    border-radius: 1.5vw;
+    background-color: $color-base;
+    box-shadow: $box-shadow;
+    border: 2px solid #159394;
+  }
+  &--task {
+    padding: vw-pc(20) 0;
+    border-radius: vw-pc(20);
+    background-color: $color-base;
+    box-shadow: $box-shadow;
+  }
+  &-scroll {
+    width: 100%;
+    max-height: 54vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 1em 0;
+    padding: 0 1.5em 0 2.5em;
+  }
+  &-progress {
+    margin-top: vw-pc(25);
+    margin-bottom: vw-pc(25);
+    padding: vw-pc(20);
+    border-radius: vw-pc(20);
+    background-color: $color-base;
+    box-shadow: $box-shadow;
+  }
 }
 
 @media screen and (min-width: $breakpoint) {

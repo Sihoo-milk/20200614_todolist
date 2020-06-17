@@ -1,20 +1,14 @@
 // main: ../../style.scss
 
 .aside {
-  position: fixed;
   align-self: stretch;
-  padding: 0 vw-pc(10);
-  width: vw-pc(250);
-  height: 100%;
-  @include gradient-primary-height;
+  padding: 5vw 0 0;
+  width: 18vw;
+  background: #159394;
 }
 
 @media screen and (min-width: $breakpoint) {
 
-  .aside {
-    padding: 0 10px;
-    width: 250px;
-  }
 }
 
 .logo {
@@ -37,6 +31,104 @@
   font-weight: 700;
   line-height: 1.25em;
   letter-spacing: .1em;
+}
+
+.progress {
+  &-title {
+    padding: 0 1em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: none;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #40b477;
+  }
+  &-subtitle {
+    padding: .5em 1em;
+    font-size: .8vw;
+    text-align: center;
+    color: #85c8a5;
+  }
+  &-graph {
+    display: flex;
+    justify-content: center;
+    padding: .5em 1em;
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+.status {
+  padding: 3vw 1vw;
+  background: #026162;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1em;
+  text-transform: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff;
+  &-title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  &-subtitle {
+    padding: .5em 0;
+    font-size: .8em;
+    line-height: 1.1em;
+    color: #bae5e5;
+  }
+  &-situation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    text-align: left;
+  }
+  &-icon {
+    height: 2vw;
+  }
+  &-txt {
+    padding: 0 .8em;
+    font-size: .7em;
+    &-caption {
+      margin-bottom: .2em;
+      font-weight: 700;
+    }
+  }
+  &-meter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: .6vw;
+    font-weight: bold;
+    &--red {
+      background: #d45757;
+    }
+    &--green {
+      background: #40b477;
+    }
+  }
+}
+
+.message-title {
+  padding: 3vw 1.5vw;
+  &-txt {
+    margin-bottom: 0;
+    color: #cafcff;
+    font-family: "Montserrat", sans-serif;
+    font-size: .7em;
+    letter-spacing: .3em;
+    text-align: left;
+    line-height: 2em;
+    &-thick {
+      font-weight: 700;
+    }
+  }
 }
 
 @media screen and (min-width: $breakpoint) {

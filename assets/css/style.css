@@ -644,6 +644,12 @@ Created using IcoMoon - icomoon.io
     margin: 0 0 0 1em;
     color: #9a9a9a;
     font-size: 1.25vw; }
+  .flex-title-bitween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .flex-title-caption {
+    display: flex; }
 
 .flex-title--border {
   border-bottom: 1px solid #e5e5e5; }
@@ -674,19 +680,11 @@ Created using IcoMoon - icomoon.io
   .text-desc {
     font-size: 18px; } }
 .aside {
-  position: fixed;
   align-self: stretch;
-  padding: 0 0.6944444444vw;
-  width: 17.3611111111vw;
-  height: 100%;
-  background: -moz-linear-gradient(top, #72e183 0%, #00aed9 100%);
-  background: -webkit-linear-gradient(top, #72e183 0%, #00aed9 100%);
-  background: linear-gradient(to bottom, #72e183 0%, #00aed9 100%); }
+  padding: 5vw 0 0;
+  width: 18vw;
+  background: #159394; }
 
-@media screen and (min-width: 1441px) {
-  .aside {
-    padding: 0 10px;
-    width: 250px; } }
 .logo {
   display: flex;
   align-items: center;
@@ -705,6 +703,85 @@ Created using IcoMoon - icomoon.io
   font-weight: 700;
   line-height: 1.25em;
   letter-spacing: .1em; }
+
+.progress-title {
+  padding: 0 1em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.1em;
+  text-transform: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #40b477; }
+.progress-subtitle {
+  padding: .5em 1em;
+  font-size: .8vw;
+  text-align: center;
+  color: #85c8a5; }
+.progress-graph {
+  display: flex;
+  justify-content: center;
+  padding: .5em 1em; }
+  .progress-graph-img {
+    width: 100%; }
+
+.status {
+  padding: 3vw 1vw;
+  background: #026162;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1em;
+  text-transform: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff; }
+  .status-title {
+    font-size: 1em;
+    font-weight: bold; }
+  .status-subtitle {
+    padding: .5em 0;
+    font-size: .8em;
+    line-height: 1.1em;
+    color: #bae5e5; }
+  .status-situation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    text-align: left; }
+  .status-icon {
+    height: 2vw; }
+  .status-txt {
+    padding: 0 .8em;
+    font-size: .7em; }
+    .status-txt-caption {
+      margin-bottom: .2em;
+      font-weight: 700; }
+  .status-meter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: .6vw;
+    font-weight: bold; }
+    .status-meter--red {
+      background: #d45757; }
+    .status-meter--green {
+      background: #40b477; }
+
+.message-title {
+  padding: 3vw 1.5vw; }
+  .message-title-txt {
+    margin-bottom: 0;
+    color: #cafcff;
+    font-family: "Montserrat", sans-serif;
+    font-size: .7em;
+    letter-spacing: .3em;
+    text-align: left;
+    line-height: 2em; }
+    .message-title-txt-thick {
+      font-weight: 700; }
 
 @media screen and (min-width: 1441px) {
   .logo {
@@ -786,58 +863,103 @@ Created using IcoMoon - icomoon.io
 @media screen and (min-width: 1441px) {
   .navi-reset {
     bottom: 30px; } }
-.navbar {
+.header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   padding: 10px 20px;
   background-color: #FFFFFF;
-  height: 65px;
-  border-bottom: 1px solid #e5e5e5; }
+  height: 5vw;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  z-index: 100; }
+  .header-logo {
+    height: 3vw; }
+  .header-title {
+    color: #159394;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: none;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    padding: 0 20px;
+    margin-bottom: 0; }
+  .header-time {
+    padding-left: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vw; }
+  .header-status {
+    display: flex;
+    align-items: center; }
+  .header-icon {
+    height: 3.3vw;
+    padding-right: 2em; }
 
-.navbar-account-type {
+.signout-txt {
+  font-size: 1vw; }
+
+.header-account-type {
+  display: flex;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase; }
+  font-weight: 600; }
 
-.navbar-status a {
+.header-status a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 40px;
+  width: 12vw;
+  height: 3vw;
   border-radius: 20px;
-  border: 2px solid #32d9e0;
-  color: #32d9e0;
+  border: 2px solid #85c8a5;
+  color: #85c8a5;
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
-.navbar-status a:hover {
-  background-color: #32d9e0;
+.header-status a:hover {
+  background-color: #159394;
+  border: none;
   color: #FFFFFF; }
 
-.main {
-  padding-left: 17.3611111111vw;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #effff8; }
-
-.content {
-  padding: 1.7361111111vw; }
-
-@media screen and (min-width: 1441px) {
-  .main {
-    padding-left: 250px; }
-
-  .content {
-    padding: 25px; } }
 .box {
   margin-bottom: 1.7361111111vw;
   padding: 1.3888888889vw;
   border-radius: 1.3888888889vw;
   background-color: #FFFFFF;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); }
+  .box-wrap {
+    padding: 0 1vw; }
+  .box-input {
+    margin-bottom: 0;
+    padding: 1.5em;
+    border-radius: 1.5vw;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border: 2px solid #159394; }
+  .box--task {
+    padding: 1.3888888889vw 0;
+    border-radius: 1.3888888889vw;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); }
+  .box-scroll {
+    width: 100%;
+    max-height: 54vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 1em 0;
+    padding: 0 1.5em 0 2.5em; }
+  .box-progress {
+    margin-top: 1.7361111111vw;
+    margin-bottom: 1.7361111111vw;
+    padding: 1.3888888889vw;
+    border-radius: 1.3888888889vw;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); }
 
 @media screen and (min-width: 1441px) {
   .box {
@@ -1642,5 +1764,181 @@ input::-moz-focus-outer {
 
   .result-step-value {
     font-size: 24px; } }
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f8f8; }
+
+.content {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 5vw; }
+  .content-space {
+    flex: 1;
+    width: 100%;
+    padding: 1.7361111111vw;
+    padding-bottom: 1vw; }
+  .content-input-space {
+    width: 100%;
+    padding: 0 1.7361111111vw 0; }
+
+.task-title {
+  padding: 0 2em;
+  font-size: 1.25vw; }
+
+.task-title-en {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  color: #159394; }
+
+.task-title-jp {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1em;
+  color: #9a9a9a;
+  font-size: 1.25vw; }
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .7em 0;
+  border-bottom: 1px solid #f1f1f1; }
+
+.task-btns {
+  display: flex;
+  align-items: center; }
+
+.task-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7vw;
+  height: 2.5vw;
+  border-radius: .5vw;
+  font-weight: bold;
+  color: #fff; }
+
+.checkbox {
+  width: 100%;
+  margin-bottom: 0; }
+
+.mycheckbox input[type="checkbox"] {
+  display: none; }
+
+.mycheckbox input[type="checkbox"] + label {
+  display: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 40px;
+  padding-right: 10px; }
+
+.mycheckbox input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  left: 0;
+  top: 50%;
+  border: 2px solid;
+  border-color: #cfcfcf;
+  /* 枠の色変更 お好きな色を */
+  background-color: #FFF;
+  /* 背景の色変更 お好きな色を */
+  border-radius: 50%; }
+
+.mycheckbox input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 11px;
+  height: 6px;
+  margin-top: -4px;
+  top: 50%;
+  left: 7px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-color: #159394;
+  /* チェックの色変更 お好きな色を */ }
+
+.mycheckbox input[type="checkbox"]:checked + label::before {
+  background-color: #d9f7f7;
+  border-color: #159394;
+  /* チェックの色変更 お好きな色を */ }
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through; }
+
+.btn-switching {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 3vw;
+  border-radius: 20px;
+  border: 2px solid #159394;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background: #159394; }
+.btn-add {
+  width: 13vw;
+  height: 2.5vw;
+  border-radius: 5px;
+  border: 2px solid #159394;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background: #159394; }
+  .btn-add-wrap {
+    margin-right: 1em; }
+.btn--edit {
+  background: #159394; }
+.btn--delete {
+  margin-left: 2em;
+  background: #d45757; }
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bae5e5;
+  width: 100%;
+  margin-right: 4em;
+  margin-left: 1em;
+  padding: 0 0 .7em 0; }
+
+.input-placeholder {
+  width: 100%;
+  padding-left: 1.5em;
+  color: #159394; }
+
+.input-placeholder::-webkit-input-placeholder {
+  color: #159394; }
+
+.input-placeholder::-moz-placeholder {
+  color: #159394; }
+
+.input-placeholder:-ms-input-placeholder {
+  color: #159394; }
+
+.footer-main {
+  width: 100%;
+  padding: 1em 1.7361111111vw 1em;
+  text-align: right;
+  font-size: .8em;
+  color: #999999; }
 
 /*# sourceMappingURL=style.css.map */

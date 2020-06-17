@@ -1,0 +1,206 @@
+// main: ../../style.scss
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 5vw;
+  &-space {
+    flex: 1;
+    width: 100%;
+    padding: vw-pc(25);
+    padding-bottom: 1vw;
+  }
+  &-input-space {
+    width: 100%;
+    padding: 0 vw-pc(25) 0;
+  }
+}
+
+.task-title {
+  padding: 0 2em;
+  font-size: 1.25vw;
+}
+
+.task-title-en {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  color: #159394;
+}
+
+.task-title-jp {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 1em;
+  color: #9a9a9a;
+  font-size: 1.25vw;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .7em 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.task-btns {
+  display: flex;
+  align-items: center;
+}
+
+.task-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7vw;
+  height: 2.5vw;
+  border-radius: .5vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+.checkbox {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.mycheckbox input[type="checkbox"]{
+  display: none;
+}
+
+.mycheckbox input[type="checkbox"]+label{
+  display: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.mycheckbox input[type="checkbox"]+label::before{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  left: 0;
+  top: 50%;
+  border: 2px solid;
+  border-color:  #cfcfcf; /* 枠の色変更 お好きな色を */
+  background-color: #FFF; /* 背景の色変更 お好きな色を */
+  border-radius: 50%;
+}
+
+.mycheckbox input[type="checkbox"]:checked+label::after{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 11px;
+  height: 6px;
+  margin-top: -4px;
+  top: 50%;
+  left: 7px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-color:  #159394; /* チェックの色変更 お好きな色を */
+}
+
+.mycheckbox input[type="checkbox"]:checked+label::before{
+  background-color: #d9f7f7;
+  border-color:  #159394; /* チェックの色変更 お好きな色を */
+}
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+}
+
+.btn {
+  &-switching {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 3vw;
+    border-radius: 20px;
+    border: 2px solid #159394;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background: #159394;
+  }
+  &-add {
+    width: 13vw;
+    height: 2.5vw;
+    border-radius: 5px;
+    border: 2px solid #159394;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background: #159394;
+    &-wrap {
+      margin-right: 1em;
+    }
+  }
+  &--edit {
+    background: #159394;
+  }
+  &--delete {
+    margin-left: 2em;
+    background: #d45757;
+  }
+}
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bae5e5;
+  width: 100%;
+  margin-right: 4em;
+  margin-left: 1em;
+  padding: 0 0 .7em 0;
+}
+
+.input-placeholder {
+  width: 100%;
+  padding-left: 1.5em;
+  color: #159394;
+}
+
+.input-placeholder::-webkit-input-placeholder {
+	color: #159394;
+}
+
+.input-placeholder::-moz-placeholder {
+	color: #159394;
+}
+
+.input-placeholder:-ms-input-placeholder {
+	color: #159394;
+}
+
+.footer {
+  &-main {
+    width: 100%;
+    padding: 1em vw-pc(25) 1em;
+    text-align: right;
+    font-size: .8em;
+    color: #999999;
+  }
+}

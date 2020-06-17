@@ -1,35 +1,73 @@
 // main: ../../style.scss
 
-.navbar {
+.header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   padding: 10px 20px;
   background-color: $color-base;
-  height: 65px;
+  height: 5vw;
   border-bottom: 1px solid $border-gray;
+  box-shadow: $box-shadow;
+  z-index: 100;
+  &-logo {
+    height: 3vw;
+  }
+  &-title {
+    color: #159394;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: none;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+  &-time {
+    padding-left: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vw;
+  }
+  &-status {
+    display: flex;
+    align-items: center;
+  }
+  &-icon {
+    height: 3.3vw;
+    padding-right: 2em;
+  }
 }
 
-.navbar-account-type {
+.signout-txt {
+  font-size: 1vw;
+}
+
+.header-account-type {
+  display: flex;
+  align-items: center;
   font-family: $font2;
   font-size: 18px; font-size: 1.8rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
-.navbar-status a {
+.header-status a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 40px;
+  width: 12vw;
+  height: 3vw;
   border-radius: 20px;
-  border: 2px solid $color-main;
-  color: $color-main;
-  font-family: $font2;
+  border: 2px solid #85c8a5;
+  color: #85c8a5;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
-.navbar-status a:hover {
-  background-color: $color-main;
+.header-status a:hover {
+  background-color: #159394;
+  border: none;
   color: $color-base;
 }

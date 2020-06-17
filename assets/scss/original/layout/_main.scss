@@ -1,23 +1,16 @@
 // main: ../../style.scss
 
 .main {
-  padding-left: vw-pc(250);
-  width: 100%;
-  min-height: 100vh;
-  background-color: #effff8;
 }
 
 .content {
-  padding: vw-pc(25);
 }
 
 @media screen and (min-width: $breakpoint) {
 
   .main {
-    padding-left: 250px;
   }
 
   .content {
-    padding: 25px;
   }
 }

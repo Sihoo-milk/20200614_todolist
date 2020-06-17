@@ -75,6 +75,14 @@
     color: #9a9a9a;
     font-size: vw-pc(18);
   }
+  &-bitween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-caption {
+    display: flex;
+  }
 }
 
 .flex-title--border {
