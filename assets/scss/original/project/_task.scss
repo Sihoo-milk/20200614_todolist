@@ -66,7 +66,8 @@
   justify-content: center;
   width: 7vw;
   height: 2.5vw;
-  border-radius: .5vw;
+  border-radius: vw-pc(7);
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #fff;
 }
@@ -101,9 +102,9 @@
   left: 0;
   top: 50%;
   border: 2px solid;
-  border-color:  #cfcfcf; /* 枠の色変更 お好きな色を */
-  background-color: #FFF; /* 背景の色変更 お好きな色を */
-  border-radius: 50%;
+  border-color:  #cfcfcf;
+  background-color: #FFF;
+  border-radius: 50vw;
 }
 
 .mycheckbox input[type="checkbox"]:checked+label::after{
@@ -119,12 +120,12 @@
   transform: rotate(-45deg);
   border-bottom: 3px solid;
   border-left: 3px solid;
-  border-color:  #159394; /* チェックの色変更 お好きな色を */
+  border-color:  #159394;
 }
 
 .mycheckbox input[type="checkbox"]:checked+label::before{
   background-color: #d9f7f7;
-  border-color:  #159394; /* チェックの色変更 お好きな色を */
+  border-color:  #159394;
 }
 
 input[type=checkbox]:checked + label {
@@ -138,7 +139,7 @@ input[type=checkbox]:checked + label {
     align-items: center;
     width: 20vw;
     height: 3vw;
-    border-radius: 20px;
+    border-radius: vw-pc(30);
     border: 2px solid #159394;
     color: #fff;
     font-family: "Montserrat", sans-serif;
@@ -146,9 +147,9 @@ input[type=checkbox]:checked + label {
     background: #159394;
   }
   &-add {
-    width: 13vw;
-    height: 2.5vw;
-    border-radius: 5px;
+    width: 12vw;
+    height: 3vw;
+    border-radius: vw-pc(5);
     border: 2px solid #159394;
     color: #fff;
     font-family: "Montserrat", sans-serif;
@@ -167,14 +168,49 @@ input[type=checkbox]:checked + label {
   }
 }
 
+.mB20 {
+  margin-bottom: 20px;
+}
+
+.icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: #d9f7f7;
+  border-radius: 50%;
+  border: 2px solid #159394;
+}
+
+.icon::before, .icon--plus::after {
+  position: absolute;
+  top: 45%;
+  left: 49%;
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #159394;
+  transform: translateX(-50%);
+}
+
+.icon--plus:after {
+  top: 4.5px;
+  left: -1.5px;
+  transform: rotate(90deg);
+}
+
+.add-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 .input-wrap {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #bae5e5;
   width: 100%;
-  margin-right: 4em;
-  margin-left: 1em;
-  padding: 0 0 .7em 0;
+  padding-bottom: 1vw;
+  margin-right: 3vw;
+  border-bottom: 1px solid #bae5e5;
 }
 
 .input-placeholder {

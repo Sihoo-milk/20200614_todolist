@@ -3,7 +3,7 @@
 .aside {
   align-self: stretch;
   padding: 5vw 0 0;
-  width: 18vw;
+  width: vw-pc(250);
   background: #159394;
 }
 
@@ -34,27 +34,9 @@
 }
 
 .progress {
-  &-title {
-    padding: 0 1em;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1.1em;
-    text-transform: none;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #40b477;
-  }
-  &-subtitle {
-    padding: .5em 1em;
-    font-size: .8vw;
-    text-align: center;
-    color: #85c8a5;
-  }
   &-graph {
     display: flex;
     justify-content: center;
-    padding: .5em 1em;
     &-img {
       width: 100%;
     }
@@ -62,7 +44,7 @@
 }
 
 .status {
-  padding: 3vw 1vw;
+  padding: 2vw 1vw;
   background: #026162;
   font-family: "Montserrat", sans-serif;
   line-height: 1.1em;
@@ -104,7 +86,7 @@
     justify-content: center;
     width: 3vw;
     height: 3vw;
-    border-radius: .6vw;
+    border-radius: vw-pc(7);
     font-weight: bold;
     &--red {
       background: #d45757;

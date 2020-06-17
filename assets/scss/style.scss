@@ -5,7 +5,6 @@
 @import 'original/base/variable';
 @import 'original/base/reset';
 @import 'original/base/base';
-@import 'original/base/icon';
 @import 'original/mixins/color';
 
 @import 'original/layout/layout';
@@ -14,15 +13,10 @@
 @import 'original/layout/main';
 
 @import 'original/type/box';
-@import 'original/type/block';
+@import 'original/type/graph';
 
 @import 'original/component/button';
 @import 'original/component/form';
 
 @import 'original/project/login';
-@import 'original/project/step01';
-@import 'original/project/step02';
-@import 'original/project/step03';
-@import 'original/project/simulator';
-@import 'original/project/result';
 @import 'original/project/task';

@@ -36,8 +36,11 @@
     align-items: center;
   }
   &-icon {
-    height: 3.3vw;
-    padding-right: 2em;
+    width: vw-pc(50);
+    height: vw-pc(50);
+    border: 0.2083333333vw solid #eee;
+    border-radius: 50%;
+    margin-right: 2em;
   }
 }
 
@@ -59,7 +62,7 @@
   align-items: center;
   width: 12vw;
   height: 3vw;
-  border-radius: 20px;
+  border-radius: vw-pc(30);
   border: 2px solid #85c8a5;
   color: #85c8a5;
   font-family: "Montserrat", sans-serif;

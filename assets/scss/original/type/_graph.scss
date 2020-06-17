@@ -1,0 +1,223 @@
+// main: ../style.scss
+
+.graph {
+  li {
+    > p {
+      margin: 0.3em 0;
+      font-size: vw-pc(13);
+      text-align: center;
+    }
+  }
+}
+
+.graph-head {
+  font-family: $font2;
+  font-size: vw-pc(15);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+
+.graph li:nth-child(1) {
+  .graph-head {
+    color: #40b477;
+  }
+  > p {
+    color: #85c8a5;
+  }
+}
+
+.graph--s li:nth-child(2) {
+  background-color: #ecf7f1;
+  .graph-head {
+    color: $color-green;
+  }
+  > p {
+    color: #85c8a5;
+  }
+}
+
+.graph--a li:nth-child(2) {
+  background-color: #e8eef7;
+  .graph-head {
+    color: #4072b4;
+  }
+  > p {
+    color: #88a6d5;
+  }
+}
+
+.graph--b li:nth-child(2) {
+  background-color: #e1f6f6;
+  .graph-head {
+    color: #3cb6b7;
+  }
+  > p {
+    color: #76cacb;
+  }
+}
+.graph--c li:nth-child(2) {
+  background-color: #ffecdc;
+  .graph-head {
+    color: #eea361;
+  }
+  > p {
+    color: #eea361;
+  }
+}
+
+.graph--d li:nth-child(2) {
+  background-color: #fff0ed;
+  .graph-head {
+    color: #ff9a89;
+  }
+  > p {
+    color: #ffb3a5;
+  }
+}
+
+.graph--e li:nth-child(2) {
+  background-color: #f5e2e4;
+  .graph-head {
+    color: #ee6161;
+  }
+  > p {
+    color: #ec9f9f;
+  }
+}
+
+.graph-chart {
+  position: relative;
+  margin: 2rem auto 0;
+  width: vw-pc(110);
+  height: vw-pc(110);
+  z-index: 2;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: vw-pc(76);
+    height: vw-pc(76);
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    p {
+      font-family: $font2;
+      font-weight: 700;
+    }
+  }
+}
+
+.graph li:nth-child(1) .graph-chart {
+  div {
+    background-color: #fff;
+    p {
+      margin-bottom: 0;
+      color: $color-green;
+      font-size: vw-pc(15);
+      font-weight: 600;
+      span {
+        font-size: vw-pc(28);
+      }
+    }
+  }
+}
+
+.graph li:nth-child(2) .graph-chart {
+  div {
+    p {
+      font-size: vw-pc(36);
+      font-weight: 600;
+    }
+  }
+}
+
+.graph--s li:nth-child(2) .graph-chart {
+  div {
+    background-color: #ecf7f1;
+    p {
+      color: $color-green;
+    }
+  }
+}
+
+.graph--a li:nth-child(2) .graph-chart {
+  div {
+    background-color: #e8eef7;
+    p {
+      color: #4072b4;
+    }
+  }
+}
+
+.graph--b li:nth-child(2) .graph-chart {
+  div {
+    background-color: #e1f6f6;
+    p {
+      color: #3cb6b7;
+    }
+  }
+}
+
+.graph--c li:nth-child(2) .graph-chart {
+  div {
+    background-color: #ffecdc;
+    p {
+      color: #eea361;
+    }
+  }
+}
+
+.graph--d li:nth-child(2) .graph-chart {
+  div {
+    background-color: #fff0ed;
+    p {
+      color: #ff9a89;
+    }
+  }
+}
+
+.graph--e li:nth-child(2) .graph-chart div {
+  background-color: #f5e2e4;
+  color: #ee6161;
+  p {
+    color: #ee6161;
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  .graph li {
+    p {
+      font-size: 13px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .graph-head {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  .graph li:nth-child(1) .graph-chart {
+    div {
+      p {
+        font-size: 15px;
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .graph li:nth-child(2) .graph-chart {
+    div {
+      p {
+        font-size: 36px;
+      }
+    }
+  }
+}

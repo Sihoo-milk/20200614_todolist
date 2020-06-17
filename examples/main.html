@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>RESULT | CHAT BOT SIMULATOR</title>
+  <title>TASKS | ToDo LIST</title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport" />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- CSS Files -->
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/style.css" rel="stylesheet" />
 </head>
 <body class="">
@@ -32,10 +30,17 @@
       <div class="aside">
         <div class="box-wrap">
           <div class="box-progress">
-            <div class="progress-title">PROGRESS</div>
-            <div class="progress-subtitle">タスクの進捗率</div>
             <div class="progress-graph">
-              <img src="../assets/img/graph.png" alt="円グラフ" class="progress-graph-img">
+              <ul class="graph graph--a">
+                <li>
+                  <h2 class="graph-head">PROGRESS</h2>
+                  <p>タスクの進捗率</p>
+                  <div class="graph-chart">
+                    <canvas id="chart-pie01"></canvas>
+                    <div><p><span>78</span>%</p></div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -78,109 +83,107 @@
       <div class="content">
         <div class="content-space">
           <div class="row">
-            <div class="col-12">
-              <div class="box--task">
-                <div class="flex-title-bitween task-title">
-                  <div class="flex-title-caption">
-                    <span class="task-title-en">TASKS</span>
-                    <h3 class="task-title-jp">タスク</h3>
-                  </div>
-                  <div>
-                    <button class="btn-switching">完了タスクを非表示にする</button>
-                  </div>
+            <div class="box--task">
+              <div class="flex-title-bitween task-title">
+                <div class="flex-title-caption">
+                  <span class="task-title-en">TASKS</span>
+                  <h3 class="task-title-jp">タスク</h3>
                 </div>
-                <div class="box-scroll">
-                  <form action="#">
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample1" value="1" type="checkbox"><label for="sample1">経費申請</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample2" value="2" type="checkbox"><label for="sample2">お昼ご飯を買う</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample3" value="3" type="checkbox"><label for="sample3">筋トレをする</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample4" value="4" type="checkbox"><label for="sample4">電気代を支払う</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample5" value="5" type="checkbox"><label for="sample5">特別給付金の申請</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample6" value="6" type="checkbox"><label for="sample6">特別給付金の申請</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample7" value="7" type="checkbox"><label for="sample7">母の日のプレゼント</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                    <div class="task-item">
-                      <div class="checkbox">
-                        <div class="mycheckbox">
-                          <input id="sample8" value="8" type="checkbox"><label for="sample8">父の日のプレゼント</label>
-                        </div>
-                      </div>
-                      <div class="task-btns">
-                        <div class="task-btn btn--edit">Edit</div>
-                        <div class="task-btn btn--delete">Delete</div>
-                      </div>
-                    </div>
-                  </form>
+                <div>
+                  <button class="btn-switching">完了タスクを非表示にする</button>
                 </div>
+              </div>
+              <div class="box-scroll">
+                <form action="#">
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample1" value="1" type="checkbox"><label for="sample1">経費申請</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample2" value="2" type="checkbox"><label for="sample2">お昼ご飯を買う</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample3" value="3" type="checkbox"><label for="sample3">筋トレをする</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample4" value="4" type="checkbox"><label for="sample4">電気代を支払う</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample5" value="5" type="checkbox"><label for="sample5">特別給付金の申請</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample6" value="6" type="checkbox"><label for="sample6">特別給付金の申請</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample7" value="7" type="checkbox"><label for="sample7">母の日のプレゼント</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <div class="checkbox">
+                      <div class="mycheckbox">
+                        <input id="sample8" value="8" type="checkbox"><label for="sample8">父の日のプレゼント</label>
+                      </div>
+                    </div>
+                    <div class="task-btns">
+                      <div class="task-btn btn--edit">Edit</div>
+                      <div class="task-btn btn--delete">Delete</div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -189,12 +192,16 @@
           <div class="row">
             <div class="col-12">
               <div class="box-input flex-title-bitween">
-                <div class="input-wrap">
-                  <img src="../assets/img/mark-plus.png" alt="プラスマーク">
-                  <input type="text" placeholder="例：課題を完了する" class="input-placeholder">
-                </div>
-                <div class="btn-add-wrap">
-                  <button class="btn-add">Add Task</button>
+                <div class="add-wrap">
+                  <div class="input-wrap">
+                    <div class="icon icon--plus">
+                      <span class="icon__mark"></span>
+                    </div>
+                    <input type="text" placeholder="例：課題を完了する" class="input-placeholder">
+                  </div>
+                  <div class="btn-add-wrap">
+                    <button class="btn-add">Add Task</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -203,20 +210,34 @@
         <footer class="footer-main">Copyright© 株式会社キカガク All Rights Reserved</footer>
       </div>
     </main>
-      <!--<footer class="footer"></footer>-->
   </div>
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/jquery.min.js"></script>
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!-- Chart JS -->
   <script src="../assets/js/plugins/chartjs.min.js"></script>
-  <!--  Notifications Plugin    -->
-  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
-  <script src="../assets/demo/result.js"></script>
+  <script src="../assets/js/plugins/demo.js"></script>
+  <script>
+    var ctx = document.getElementById('chart-pie01')
+    var myDoughnutChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        datasets: [
+          {
+            backgroundColor: ['#40b477', '#bdd8ca'],
+            data: [78, 22],
+            borderWidth: [0, 0],
+          },
+        ],
+      },
+      options: {
+        maintainAspectRatio: false,
+        title: {
+          display: false,
+        },
+        legend: {
+          display: false,
+        },
+      },
+    })
+  </script>
 </body>
 
 </html>

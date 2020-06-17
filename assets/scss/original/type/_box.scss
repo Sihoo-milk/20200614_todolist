@@ -12,7 +12,7 @@
   &-input {
     margin-bottom: 0;
     padding: 1.5em;
-    border-radius: 1.5vw;
+    border-radius: vw-pc(7);
     background-color: $color-base;
     box-shadow: $box-shadow;
     border: 2px solid #159394;
@@ -35,7 +35,7 @@
     margin-top: vw-pc(25);
     margin-bottom: vw-pc(25);
     padding: vw-pc(20);
-    border-radius: vw-pc(20);
+    border-radius: vw-pc(15);
     background-color: $color-base;
     box-shadow: $box-shadow;
   }
