@@ -37,6 +37,7 @@
   text-transform: uppercase;
   line-height: 1.4em;
   color: #159394;
+  letter-spacing: 0.15em;
 }
 
 .task-title-jp {
@@ -45,6 +46,7 @@
   margin: 0 0 0 1em;
   color: #9a9a9a;
   font-size: 1.25vw;
+  letter-spacing: 0.15em;
 }
 
 .task-item {
@@ -53,6 +55,9 @@
   justify-content: space-between;
   padding: .7em 0;
   border-bottom: 1px solid #f1f1f1;
+  &--hidden {
+    visibility: hidden;
+  }
 }
 
 .task-btns {
@@ -145,6 +150,11 @@ input[type=checkbox]:checked + label {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     background: #159394;
+    &--hidden {
+      border: 2px solid #159394;
+      background: #fff;
+      color: #159394;
+    }
   }
   &-add {
     width: 12vw;
@@ -168,35 +178,26 @@ input[type=checkbox]:checked + label {
   }
 }
 
-.mB20 {
-  margin-bottom: 20px;
-}
-
-.icon {
-  position: relative;
+#fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 25px;
   height: 25px;
   background: #d9f7f7;
-  border-radius: 50%;
+  text-align: center;
+  border-radius: 50vw;
   border: 2px solid #159394;
+  transition: .3s;
 }
 
-.icon::before, .icon--plus::after {
-  position: absolute;
-  top: 45%;
-  left: 49%;
-  content: '';
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid #159394;
-  transform: translateX(-50%);
-}
-
-.icon--plus:after {
-  top: 4.5px;
-  left: -1.5px;
-  transform: rotate(90deg);
+#fab i {
+  color: #159394;
+  line-height: 21px;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  padding-left: 1px;
 }
 
 .add-wrap {
@@ -204,10 +205,12 @@ input[type=checkbox]:checked + label {
   align-items: center;
   width: 100%;
 }
+
 .input-wrap {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 43px;
   padding-bottom: 1vw;
   margin-right: 3vw;
   border-bottom: 1px solid #bae5e5;
